@@ -150,3 +150,16 @@ Como hacer la solicitud::
 DELETE /api/productos/:productoId
 ```
 en :productoId va el id del producto que quiere eliminar
+
+
+#### rutas de todas las peticiones
+              ('- GET /api/usuario/:userId/creditos - Verificar créditos disponibles');
+              ('- POST /api/usuario/:userId/creditos - Comprar créditos');
+              .('- POST /api/usuario/:userId/envio - Crear un nuevo envío');
+              .('- GET /api/usuario/:userId/envio - Obtener envíos del usuario');
+              .('- GET /api/envio/:enviosId - Obtener un envío específico');
+              .('- DELETE /api/envio/:enviosId - Eliminar un envío');
+              .('- POST /api/envios/:EnvioId/productos - Agregar producto a un envío');
+              .('- GET /api/envios/:EnvioId/productos - Obtener productos de un envío');
+              .('- PUT/productos/:productoId- Actualizar un producto');
+              .('- DELETE /api/productos/:productoId - Eliminar un producto');
