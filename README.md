@@ -1,4 +1,3 @@
-# Parcial-2-POO
 # POSTMAIL API
 
 API para gestionar envíos de POSTMAIL.
@@ -30,7 +29,7 @@ El servidor se iniciará y se conectara ah mongoDB y si es primera vez probando 
 -- En la terminal saldrá el id del usuario creado automaticamente
 -- Ese id le aparecera solo una vez en la terminal asi que si lo apaga y lo inicia nuevamente tiene que ir ala base de datos donde esta su usuario y copiar el id
 ```
-GET /api/usuario/:userId/creditoss
+GET /api/usuario/:userId/creditos
 ```
 en :userId debe poner el id que sale en la terminal una unica vez al iniciar el servidor por primera vez
 
@@ -48,7 +47,7 @@ Ejemplo de respuesta:
 
 #### Comprar créditos
 ```
-POST /api/users/:userId/credits
+POST /api/usuario/:userId/creditos
 ```
 en :userId debe poner el id que sale en la terminal una unica vez al iniciar el servidor por primera vez
 
@@ -105,7 +104,7 @@ Al eliminar el envio el credito se devuelve .
 
 #### peticion para agregar un producto a un envio
 ```
-POST /api/envio/:enviosId/productoss
+POST /api/envios/:enviosId/productos
 ```
 en :enviosId va el id del envio al que quiere agregar el producto 
 
@@ -125,7 +124,7 @@ Datos sobre el peso:
 
 #### peticion para obtener productos de un envio
 ```
-GET /api/envio/:enviosId/productos
+GET /api/envios/:enviosId/productos
 ```
 en :enviosId va el id del envio al que quiere saber su informacion
 #### peticion para actualizar la informacion del producto
@@ -152,6 +151,7 @@ DELETE /api/productos/:productoId
 en :productoId va el id del producto que quiere eliminar
 
 
+
 #### rutas de todas las peticiones
               ('- GET /api/usuario/:userId/creditos - Verificar créditos disponibles');
               ('- POST /api/usuario/:userId/creditos - Comprar créditos');
@@ -163,3 +163,4 @@ en :productoId va el id del producto que quiere eliminar
               .('- GET /api/envios/:EnvioId/productos - Obtener productos de un envío');
               .('- PUT/productos/:productoId- Actualizar un producto');
               .('- DELETE /api/productos/:productoId - Eliminar un producto');
+  
